@@ -1,0 +1,212 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: #000000;
+  background-color: #ffffff;
+  font-family: "Noto Sans JP", sans-serif;
+  font-size: 18px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: #000000;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus-visible {
+  text-decoration: underline;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 960px;
+  margin: 20px auto;
+}
+
+.site-title {
+  margin-left: 20px;
+  padding: 0 20px;
+  border: 1px solid #000000;
+  font-size: 34px;
+  line-height: 1.35;
+}
+
+.nav-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.nav-list li {
+  margin: 0 20px;
+}
+
+.nav-list a {
+  font-size: 34px;
+}
+
+.main-visual img {
+  width: 100%;
+}
+
+section h2 {
+  margin: 0;
+  padding: 60px 0 40px;
+  font-size: 34px;
+  text-align: center;
+}
+
+.profile-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 10px;
+}
+
+.profile-photo {
+  flex: 0 0 280px;
+  width: 280px;
+  height: 280px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.profile-text {
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.profile-text h3 {
+  margin: 0 0 8px;
+  font-size: 24px;
+}
+
+.profile-text ul {
+  margin: 0;
+  padding-left: 1.5em;
+}
+
+.profile-text li,
+.work-card p,
+.site-footer small {
+  font-size: 18px;
+}
+
+.works-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.work-card {
+  margin: 0;
+  padding-bottom: 60px;
+  text-align: center;
+}
+
+.work-card img {
+  width: 100%;
+  aspect-ratio: 358 / 268;
+  object-fit: cover;
+}
+
+.work-card p {
+  margin: 8px 0 0;
+  line-height: 1.6;
+}
+
+.site-footer p {
+  margin: 0;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .header-container {
+    flex-wrap: nowrap;
+    margin: 20px auto;
+    padding: 0 10px;
+  }
+
+  .site-title {
+    margin-left: 10px;
+    padding: 0 10px;
+    font-size: 28px;
+  }
+
+  .nav-list li {
+    margin: 0 10px;
+  }
+
+  .nav-list a {
+    font-size: 21px;
+  }
+
+  section h2 {
+    padding: 30px 0 20px;
+    font-size: 28px;
+  }
+
+  .profile-container {
+    flex-direction: column;
+    gap: 16px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 10px 20px;
+  }
+
+  .profile-photo {
+    flex-basis: auto;
+  }
+
+  .profile-text {
+    width: 100%;
+    max-width: 420px;
+    padding: 0;
+  }
+
+  .works-container {
+    grid-template-columns: 1fr;
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .work-card {
+    padding-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .site-title {
+    font-size: 24px;
+  }
+
+  .nav-list li {
+    margin: 0 6px;
+  }
+
+  .nav-list a {
+    font-size: 18px;
+  }
+}
